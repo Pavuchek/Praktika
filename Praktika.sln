@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF Reader", "Praktika\PDF 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAnim", "WinAnim\WinAnim.csproj", "{D567072C-4F6C-4587-9F71-0FD603CF17C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinBackgroundWorker", "WinBackgroundWorker\WinBackgroundWorker.csproj", "{FD1B9677-6281-4A9C-99CB-CAC7630028BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchDelegate", "WinAsynchDelegate\WinAsynchDelegate.csproj", "{785DB7B6-93DF-4B36-A2DA-42A34169B7E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethod", "WinAsynchMethod\WinAsynchMethod.csproj", "{71884794-EDEE-4BC3-A942-C886510BA1E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,18 @@ Global
 		{D567072C-4F6C-4587-9F71-0FD603CF17C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D567072C-4F6C-4587-9F71-0FD603CF17C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D567072C-4F6C-4587-9F71-0FD603CF17C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD1B9677-6281-4A9C-99CB-CAC7630028BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD1B9677-6281-4A9C-99CB-CAC7630028BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD1B9677-6281-4A9C-99CB-CAC7630028BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD1B9677-6281-4A9C-99CB-CAC7630028BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785DB7B6-93DF-4B36-A2DA-42A34169B7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785DB7B6-93DF-4B36-A2DA-42A34169B7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785DB7B6-93DF-4B36-A2DA-42A34169B7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785DB7B6-93DF-4B36-A2DA-42A34169B7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
