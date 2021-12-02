@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C30F9CD0-4902-40BA-AA91-682CF61CD1CD}</ProjectGuid>
+    <ProjectGuid>{D567072C-4F6C-4587-9F71-0FD603CF17C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Praktika</RootNamespace>
-    <AssemblyName>Praktika</AssemblyName>
+    <RootNamespace>WinAnim</RootNamespace>
+    <AssemblyName>WinAnim</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinAPIClass.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
