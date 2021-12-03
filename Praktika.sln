@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchDelegate", "WinAsy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethod", "WinAsynchMethod\WinAsynchMethod.csproj", "{71884794-EDEE-4BC3-A942-C886510BA1E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAsynchMethod1", "WinAsynchMethod1\WinAsynchMethod1.csproj", "{FF711537-E5A4-426E-BD52-A4E7C538F515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71884794-EDEE-4BC3-A942-C886510BA1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF711537-E5A4-426E-BD52-A4E7C538F515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF711537-E5A4-426E-BD52-A4E7C538F515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF711537-E5A4-426E-BD52-A4E7C538F515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF711537-E5A4-426E-BD52-A4E7C538F515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
