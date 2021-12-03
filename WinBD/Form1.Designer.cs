@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
+            this.oleDbCommand1 = new System.Data.OleDb.OleDbCommand();
+            this.SuspendLayout();
+            // 
+            // oleDbConnection1
+            // 
+            this.oleDbConnection1.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\1\\source\\repos\\Pavuchek\\Pr" +
+    "aktika\\WinBD\\RBProduct.mdb";
+            // 
+            // oleDbCommand1
+            // 
+            this.oleDbCommand1.CommandText = "SELECT * FROM Поставщики";
+            this.oleDbCommand1.Connection = this.oleDbConnection1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Data.OleDb.OleDbConnection oleDbConnection1;
+        private System.Data.OleDb.OleDbCommand oleDbCommand1;
     }
 }
 
