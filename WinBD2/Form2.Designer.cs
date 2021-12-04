@@ -180,7 +180,7 @@
             this.FilterTextBox.Name = "FilterTextBox";
             this.FilterTextBox.Size = new System.Drawing.Size(100, 20);
             this.FilterTextBox.TabIndex = 5;
-            this.FilterTextBox.Text = "Город = \'Пушкин\'";
+            this.FilterTextBox.Text = "Телефон = \'123-45-67, 123-45-68\'";
             // 
             // SortTextBox
             // 
@@ -188,7 +188,7 @@
             this.SortTextBox.Name = "SortTextBox";
             this.SortTextBox.Size = new System.Drawing.Size(100, 20);
             this.SortTextBox.TabIndex = 6;
-            this.SortTextBox.Text = "Фамилия";
+            this.SortTextBox.Text = "Поставщик";
             // 
             // dataGridViewTextBoxColumn1
             // 

@@ -17,10 +17,15 @@ namespace WinBD2
             InitializeComponent();
         }
 
+        DataView ПоставщикиDataView;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            DataView ПоставщикиDataView;
-            oleDbDataAdapter1.Fill(dataSet11.Поставщики);
+            поставщикиTableAdapter1.Fill(rbProductDataSet1.Поставщики);
+            ПоставщикиDataView = new DataView(rbProductDataSet1.Поставщики);
+            dataGridView1.DataSource = ПоставщикиDataView;
+            ПоставщикиDataView.Sort = SortTextBox.Text;
+            ПоставщикиDataView.RowFilter = FilterTextBox.Text;
         }
 
         private void button2_Click(object sender, EventArgs e)
