@@ -39,19 +39,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.FilterTextBox = new System.Windows.Forms.TextBox();
+            this.SortTextBox = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet11 = new WinBD2.DataSet1();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.FilterTextBox = new System.Windows.Forms.TextBox();
-            this.SortTextBox = new System.Windows.Forms.TextBox();
+            this.поставщикиTableAdapter1 = new WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
+            this.rbProductDataSet1 = new WinBD.RBProductDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbConnection1
@@ -153,40 +156,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(454, 150);
             this.dataGridView1.TabIndex = 2;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код поставщика";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Код поставщика";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Поставщик";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Поставщик";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Адрес поставщика";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Адрес поставщика";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Телефон";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Телефон";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataSet11BindingSource
-            // 
-            this.dataSet11BindingSource.DataSource = this.dataSet11;
-            this.dataSet11BindingSource.Position = 0;
-            // 
-            // dataSet11
-            // 
-            this.dataSet11.DataSetName = "DataSet1";
-            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -221,6 +190,49 @@
             this.SortTextBox.TabIndex = 6;
             this.SortTextBox.Text = "Фамилия";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Код поставщика";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Код поставщика";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Поставщик";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Поставщик";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Адрес поставщика";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Адрес поставщика";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Телефон";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Телефон";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataSet11BindingSource
+            // 
+            this.dataSet11BindingSource.DataSource = this.dataSet11;
+            this.dataSet11BindingSource.Position = 0;
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // поставщикиTableAdapter1
+            // 
+            this.поставщикиTableAdapter1.ClearBeforeFill = true;
+            // 
+            // rbProductDataSet1
+            // 
+            this.rbProductDataSet1.DataSetName = "RBProductDataSet";
+            this.rbProductDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +250,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +280,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox FilterTextBox;
         private System.Windows.Forms.TextBox SortTextBox;
+        private WinBD.RBProductDataSetTableAdapters.ПоставщикиTableAdapter поставщикиTableAdapter1;
+        private WinBD.RBProductDataSet rbProductDataSet1;
     }
 }

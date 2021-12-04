@@ -19,6 +19,7 @@ namespace WinBD2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DataView ПоставщикиDataView;
             oleDbDataAdapter1.Fill(dataSet11.Поставщики);
         }
 
