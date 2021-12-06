@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label поставщикLabel;
             this.rBProductDataSet = new WinDataSourcesWizard.RBProductDataSet();
             this.поставщикиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.поставщикиTableAdapter = new WinDataSourcesWizard.RBProductDataSetTableAdapters.ПоставщикиTableAdapter();
@@ -62,6 +63,8 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.поставщикTextBox = new System.Windows.Forms.TextBox();
+            поставщикLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rBProductDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.поставщикиBindingNavigator)).BeginInit();
@@ -118,7 +121,7 @@
             this.поставщикиBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.поставщикиBindingNavigator.Name = "поставщикиBindingNavigator";
             this.поставщикиBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.поставщикиBindingNavigator.Size = new System.Drawing.Size(745, 25);
+            this.поставщикиBindingNavigator.Size = new System.Drawing.Size(765, 25);
             this.поставщикиBindingNavigator.TabIndex = 0;
             this.поставщикиBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -324,11 +327,30 @@
             this.dataGridViewTextBoxColumn11.HeaderText = "Код продукта";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
+            // поставщикLabel
+            // 
+            поставщикLabel.AutoSize = true;
+            поставщикLabel.Location = new System.Drawing.Point(12, 348);
+            поставщикLabel.Name = "поставщикLabel";
+            поставщикLabel.Size = new System.Drawing.Size(68, 13);
+            поставщикLabel.TabIndex = 3;
+            поставщикLabel.Text = "Поставщик:";
+            // 
+            // поставщикTextBox
+            // 
+            this.поставщикTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.поставщикиBindingSource, "Поставщик", true));
+            this.поставщикTextBox.Location = new System.Drawing.Point(86, 345);
+            this.поставщикTextBox.Name = "поставщикTextBox";
+            this.поставщикTextBox.Size = new System.Drawing.Size(466, 20);
+            this.поставщикTextBox.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 450);
+            this.ClientSize = new System.Drawing.Size(765, 450);
+            this.Controls.Add(поставщикLabel);
+            this.Controls.Add(this.поставщикTextBox);
             this.Controls.Add(this.поставщики_и_товарыDataGridView);
             this.Controls.Add(this.поставщикиDataGridView);
             this.Controls.Add(this.поставщикиBindingNavigator);
@@ -382,6 +404,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.TextBox поставщикTextBox;
     }
 }
 
