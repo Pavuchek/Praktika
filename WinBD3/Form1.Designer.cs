@@ -54,49 +54,49 @@
             // 
             this.FamtextBox.Location = new System.Drawing.Point(126, 40);
             this.FamtextBox.Name = "FamtextBox";
-            this.FamtextBox.Size = new System.Drawing.Size(100, 20);
+            this.FamtextBox.Size = new System.Drawing.Size(402, 20);
             this.FamtextBox.TabIndex = 0;
             // 
             // NametextBox
             // 
             this.NametextBox.Location = new System.Drawing.Point(126, 77);
             this.NametextBox.Name = "NametextBox";
-            this.NametextBox.Size = new System.Drawing.Size(100, 20);
+            this.NametextBox.Size = new System.Drawing.Size(402, 20);
             this.NametextBox.TabIndex = 1;
             // 
             // SectiontextBox
             // 
             this.SectiontextBox.Location = new System.Drawing.Point(126, 117);
             this.SectiontextBox.Name = "SectiontextBox";
-            this.SectiontextBox.Size = new System.Drawing.Size(100, 20);
+            this.SectiontextBox.Size = new System.Drawing.Size(402, 20);
             this.SectiontextBox.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 47);
+            this.label1.Location = new System.Drawing.Point(59, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Фамилия";
+            this.label1.Text = "Поставщик";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 84);
+            this.label2.Location = new System.Drawing.Point(21, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Имя";
+            this.label2.Text = "Адрес поставщика";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 124);
+            this.label3.Location = new System.Drawing.Point(72, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Отдел";
+            this.label3.Text = "Телефон";
             // 
             // Nextbutton
             // 
@@ -106,6 +106,7 @@
             this.Nextbutton.TabIndex = 6;
             this.Nextbutton.Text = "Next";
             this.Nextbutton.UseVisualStyleBackColor = true;
+            this.Nextbutton.Click += new System.EventHandler(this.Nextbutton_Click);
             // 
             // Previousbutton
             // 
@@ -115,6 +116,7 @@
             this.Previousbutton.TabIndex = 7;
             this.Previousbutton.Text = "Previous";
             this.Previousbutton.UseVisualStyleBackColor = true;
+            this.Previousbutton.Click += new System.EventHandler(this.Previousbutton_Click);
             // 
             // Form1
             // 
@@ -131,6 +133,7 @@
             this.Controls.Add(this.FamtextBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rbProductDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
